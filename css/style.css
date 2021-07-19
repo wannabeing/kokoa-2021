@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--wisely-backcolor);
+    height: 100vh;
+    margin: 50px;
+}
+div{
+    background-color: teal;
+    width: 200px;
+    height: 200px;
+    animation: bg-pan-left 2s ease-in-out;
+}
+  
+:root{
+    --wisely-backcolor:#f8f8f8;
+    --wisely-maincolor:#0055b8;
+    --main-color:#fcce00;
+}
+a{
+    color: wheat;
+    background-color:tomato;
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-size: 30px;
+    transition: background-color 2s ease-in-out, color 2s ease-in-out;
+}
+a:hover{
+    color:tomato;
+    background-color: wheat;
+}
+
+@media screen and (max-width: 800px) {
+    div {
+        background-color: tomato;
+    }
+}
+@keyframes bg-pan-left {
+    0% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
