@@ -1,47 +1,32 @@
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--wisely-backcolor);
-    height: 100vh;
-    margin: 50px;
-}
-div{
-    background-color: teal;
-    width: 200px;
-    height: 200px;
-    animation: bg-pan-left 2s ease-in-out;
-}
-  
-:root{
-    --wisely-backcolor:#f8f8f8;
-    --wisely-maincolor:#0055b8;
-    --main-color:#fcce00;
-}
-a{
-    color: wheat;
-    background-color:tomato;
-    text-decoration: none;
-    padding: 5px 8px;
-    border-radius: 10px;
-    font-size: 30px;
-    transition: background-color 2s ease-in-out, color 2s ease-in-out;
-}
-a:hover{
-    color:tomato;
-    background-color: wheat;
-}
+/* Open Sans Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap");
 
-@media screen and (max-width: 800px) {
-    div {
-        background-color: tomato;
-    }
+/* status-bar를 가운데에 정렬시킨다.*/
+.status-bar {
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
 }
-@keyframes bg-pan-left {
-    0% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+/* width를 33%씩 나눠 갖는다*/
+.status-bar__column {
+  width: 33%;
+}
+/* 시간을 중앙에 위치시킨다 */
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+/* 배터리관련 이미지 및 텍스트를 오른쪽상단에 배치시킨다*/
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* 배터리 이미지 좌우 margin 5px */
+.status-bar__column .fa-battery-quarter {
+  margin: 0px 5px;
+}
+/* NoService와 Wifi 이미지 사이 margin 5px*/
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}

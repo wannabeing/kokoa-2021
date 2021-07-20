@@ -1,27 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to MM Talk</title>
-</head>
-<body>
-  <div id="status-bar">
-    <div class="status-bar__column">
-      <span>No Service</span>
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-        <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
-      </svg>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to MM Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>17:12</span>
+      </div>
+      <div class="status-bar__column">
+        <span>13%</span>
+        <i class="fas fa-battery-quarter fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
     </div>
-    <div class="status-bar__column">
-      <span>17:12</span>
-    </div>
-    <div class="status-bar__column">
-      <span>110%</span>
-      <!-- battery icon -->
-      <!-- lightning icon-->
-    </div>
-  </div>
-</body>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Title</h1>
+      <p class="welcome-header__text">
+        If you have a MM Account, log in with your email or phone number
+      </p>
+    </header>
+
+    <form id="login-form">
+      <input type="text" placeholder="Email or Phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log in" />
+
+      <a href="#">Find MM Account or Password</a>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
