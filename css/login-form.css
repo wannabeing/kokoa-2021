@@ -1,0 +1,35 @@
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 60px;
+}
+#login-form input {
+  padding: 15px 0px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  border: none;
+}
+/* type=submit이 아닌 경우에만 적용시킨다. */
+#login-form input:not([type='submit']) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  transition: border-color 1s ease-in-out;
+}
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+#login-form input:focus {
+  border-color: var(--wisely);
+}
+#login-form input[type='submit'] {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--wisely);
+  cursor: pointer;
+  color: white;
+}
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}

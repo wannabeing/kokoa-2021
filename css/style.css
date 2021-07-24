@@ -1,32 +1,14 @@
 /* Open Sans Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
 
-/* status-bar를 가운데에 정렬시킨다.*/
-.status-bar {
-  display: flex;
-  justify-content: center;
-  font-family: "Open Sans", sans-serif;
+@import 'reset.css';
+@import 'variables.css';
+@import 'status-bar.css';
+@import 'welcome-header.css';
+@import 'login-form.css';
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
-/* width를 33%씩 나눠 갖는다*/
-.status-bar__column {
-  width: 33%;
-}
-/* 시간을 중앙에 위치시킨다 */
-.status-bar__column:nth-child(2) {
-  display: flex;
-  justify-content: center;
-}
-/* 배터리관련 이미지 및 텍스트를 오른쪽상단에 배치시킨다*/
-.status-bar__column:last-child {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-/* 배터리 이미지 좌우 margin 5px */
-.status-bar__column .fa-battery-quarter {
-  margin: 0px 5px;
-}
-/* NoService와 Wifi 이미지 사이 margin 5px*/
-.status-bar__column:first-child span {
-  margin-right: 5px;
-}
+
+
