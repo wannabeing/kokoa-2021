@@ -1,0 +1,16 @@
+.nav{
+    /* nav-bar가 맨 밑에서 스크롤을 사용해도 고정되게 해줌*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    background-color: #f9f9fa;
+    padding: 20px 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;/* CSS한테 padding으로 뺏긴 공간만큼 만들지 않아도 된다고 말해주기 */
+}
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+}
+

@@ -1,8 +1,14 @@
 /* Open Sans Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
 
-/* status-bar를 가운데에 정렬시킨다.*/
+
 .status-bar {
+  /* status-bar를 위에 고정시킨다.*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  /* status-bar를 가운데에 정렬시킨다.*/
   display: flex;
   justify-content: center;
   font-family: 'Open Sans', sans-serif;
