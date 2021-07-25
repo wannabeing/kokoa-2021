@@ -3,9 +3,13 @@
 
 @import 'reset.css';
 @import 'variables.css';
-@import 'status-bar.css';
-@import 'welcome-header.css';
-@import 'login-form.css';
+
+/* Components */
+@import 'components/status-bar.css';
+
+/* Screens */
+@import 'screens/welcome-header.css';
+@import 'screens/login-form.css';
 
 body {
   font-family: 'Open Sans', sans-serif;
