@@ -12,5 +12,38 @@
 .nav__list {
     display: flex;
     justify-content: space-around;
-}
 
+}
+.nav__link{
+    position: relative;
+}
+.nav__chatAlert{
+    /* span은 block이 아니기 때문에 width/heigth을 주려면 display를 block/flex으로 설정해야한다. */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    color: white;
+    
+    /* chatAlert 아이콘을 오른쪽으로 옮기기
+        자식을 absolute로 하면 부모(.nav__link)를 realative로 바꿔줘야됨 */
+    position: absolute;
+    left: 17px;
+    bottom: 13px;
+     
+}
+.nav__menuAlert{
+    display: flex;
+    background-color: tomato;
+    width: 7px;
+    height: 7px;
+    border-radius: 5px;
+    
+    /* menuAlert span을 오른쪽으로 옮기기
+        자식을 absolute로 하면 부모(.nav__link)를 realative로 바꿔줘야됨 */
+    position: absolute;
+    left: 17px;
+}
