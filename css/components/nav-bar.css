@@ -7,7 +7,7 @@
     background-color: #f9f9fa;
     padding: 20px 10px;
     border-top: 1px solid rgba(0,0,0,0.1);
-    box-sizing: border-box;/* CSS한테 padding으로 뺏긴 공간만큼 만들지 않아도 된다고 말해주기 */
+    box-sizing: border- box;/* CSS한테 padding으로 뺏긴 공간만큼 만들지 않아도 된다고 말해주기 */
 }
 .nav__list {
     display: flex;

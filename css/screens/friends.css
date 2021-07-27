@@ -1,0 +1,10 @@
+#frineds-display-link {
+    display: block;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 15px 0px;   
+}
+#frineds-display-link i {
+    color: rgba(0,0,0,0.4);
+    padding-left: 13px;
+}
