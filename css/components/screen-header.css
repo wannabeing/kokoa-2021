@@ -4,6 +4,7 @@
     padding: 0px 20px;
     padding-top: 60px;
     padding-bottom: var(--horizontal-space);  /* --horizontal-space는 20px*/
+    margin-bottom: 15px;
     opacity: 80%;
 }
 .screen-header__title{
